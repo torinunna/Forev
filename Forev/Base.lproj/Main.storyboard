@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,97 +17,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VlF-Wb-v0z">
-                                <rect key="frame" x="0.0" y="44" width="414" height="430"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forev." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFq-Qi-teh">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="200" id="cuO-YS-tJg"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디를 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0jK-ep-9So">
-                                        <rect key="frame" x="0.0" y="210" width="414" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="gx3-1H-Z02"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호를 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="egg-Up-ca4">
-                                        <rect key="frame" x="0.0" y="260" width="414" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="3da-q9-ltW"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Db-hZ-zXe">
-                                        <rect key="frame" x="0.0" y="310" width="414" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="1tv-pW-z4V"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="로그인"/>
-                                    </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uz7-2J-VrP">
-                                        <rect key="frame" x="0.0" y="360" width="414" height="30"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBW-ej-zXW">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="UaG-R6-jmq"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="아이디 찾기"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMZ-Me-ixy">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="SPl-hp-hxi"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="비밀번호 찾기"/>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9O-tc-oPh">
-                                        <rect key="frame" x="0.0" y="400" width="414" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="2cV-96-0CC"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="회원가입"/>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="OFq-Qi-teh" firstAttribute="top" secondItem="VlF-Wb-v0z" secondAttribute="top" id="5aH-yn-LRs"/>
-                                    <constraint firstAttribute="trailing" secondItem="OFq-Qi-teh" secondAttribute="trailing" id="C5L-wZ-cBv"/>
-                                    <constraint firstItem="OFq-Qi-teh" firstAttribute="leading" secondItem="VlF-Wb-v0z" secondAttribute="leading" id="G75-eF-pFI"/>
-                                </constraints>
-                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sx1-L5-heh">
+                                <rect key="frame" x="0.0" y="39" width="414" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xBs-mc-hdn">
+                                    <size key="itemSize" width="207" height="311"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PetListCell" id="RHf-kH-6Gd" customClass="PetListCell" customModule="Forev" customModuleProvider="target">
+                                        <rect key="frame" x="103.5" y="0.0" width="207" height="311"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JrH-aa-xii">
+                                            <rect key="frame" x="0.0" y="0.0" width="207" height="311"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NP6-kn-wg8">
+                                                    <rect key="frame" x="8" y="8" width="191" height="191"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="NP6-kn-wg8" secondAttribute="height" multiplier="1:1" id="afV-lZ-JnG"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tf-Ah-DnQ">
+                                                    <rect key="frame" x="68.5" y="229" width="70" height="30"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NP6-kn-wg8" firstAttribute="top" secondItem="JrH-aa-xii" secondAttribute="top" constant="8" id="2jw-ei-lGg"/>
+                                                <constraint firstItem="NP6-kn-wg8" firstAttribute="leading" secondItem="JrH-aa-xii" secondAttribute="leading" constant="8" id="727-92-B1s"/>
+                                                <constraint firstItem="1Tf-Ah-DnQ" firstAttribute="centerX" secondItem="JrH-aa-xii" secondAttribute="centerX" id="GnA-eE-2rX"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1Tf-Ah-DnQ" secondAttribute="bottom" constant="20" id="IO0-fC-FKl"/>
+                                                <constraint firstItem="1Tf-Ah-DnQ" firstAttribute="leading" secondItem="JrH-aa-xii" secondAttribute="leading" constant="68.5" id="LHV-KE-fT8"/>
+                                                <constraint firstAttribute="trailing" secondItem="NP6-kn-wg8" secondAttribute="trailing" constant="8" id="Y0P-lE-PIT"/>
+                                                <constraint firstItem="1Tf-Ah-DnQ" firstAttribute="top" secondItem="NP6-kn-wg8" secondAttribute="bottom" constant="30" id="z0a-0Y-dms"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="207" height="311"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="NP6-kn-wg8" id="m6G-A5-5ry"/>
+                                            <outlet property="nameLabel" destination="1Tf-Ah-DnQ" id="fdt-B8-Q9C"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="VlF-Wb-v0z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Syk-TM-KHY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VlF-Wb-v0z" secondAttribute="trailing" id="bYY-m2-41B"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VlF-Wb-v0z" secondAttribute="bottom" id="ybf-GQ-0I2"/>
-                            <constraint firstItem="VlF-Wb-v0z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yds-XI-7jg"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xUt-Jm-Fd4"/>
                     <connections>
-                        <outlet property="createAcButton" destination="b9O-tc-oPh" id="lsF-aJ-8RU"/>
-                        <outlet property="findIdButton" destination="bBW-ej-zXW" id="Cob-1r-hvx"/>
-                        <outlet property="findPwButton" destination="tMZ-Me-ixy" id="avA-Sa-C11"/>
-                        <outlet property="idTextfield" destination="0jK-ep-9So" id="GK1-Op-tKn"/>
-                        <outlet property="loginButton" destination="1Db-hZ-zXe" id="BgB-09-o2Y"/>
-                        <outlet property="pwTextfield" destination="egg-Up-ca4" id="Akk-Tc-MoS"/>
-                        <outlet property="titleLabel" destination="OFq-Qi-teh" id="tRb-GZ-9iO"/>
+                        <outlet property="petListCollectionView" destination="sx1-L5-heh" id="fWS-Z0-P2F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

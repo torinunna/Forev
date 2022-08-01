@@ -8,15 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var idTextfield: UITextField!
-    @IBOutlet weak var pwTextfield: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var findIdButton: UIButton!
-    @IBOutlet weak var findPwButton: UIButton!
-    @IBOutlet weak var createAcButton: UIButton!
-
+    
+    @IBOutlet weak var petListCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
