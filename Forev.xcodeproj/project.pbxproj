@@ -21,6 +21,8 @@
 		5F1E18C7289840F8004B2A35 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1E18C6289840F8004B2A35 /* SignUpViewController.swift */; };
 		5F1E18CB2898429A004B2A35 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F1E18CA2898429A004B2A35 /* SignIn.storyboard */; };
 		5F1E18CD28984323004B2A35 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1E18CC28984323004B2A35 /* SignInViewController.swift */; };
+		5F853AC328999F2200CC6F23 /* AddPet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F853AC228999F2200CC6F23 /* AddPet.storyboard */; };
+		5F853AC528999F3300CC6F23 /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F853AC428999F3300CC6F23 /* AddPetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		5F1E18C6289840F8004B2A35 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5F1E18CA2898429A004B2A35 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		5F1E18CC28984323004B2A35 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		5F853AC228999F2200CC6F23 /* AddPet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPet.storyboard; sourceTree = "<group>"; };
+		5F853AC428999F3300CC6F23 /* AddPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				5F1E188A2897C23A004B2A35 /* SceneDelegate.swift */,
 				5F1E188C2897C23A004B2A35 /* ViewController.swift */,
 				5F1E188E2897C23A004B2A35 /* Main.storyboard */,
+				5F853AC228999F2200CC6F23 /* AddPet.storyboard */,
+				5F853AC428999F3300CC6F23 /* AddPetViewController.swift */,
 				5F1E18CA2898429A004B2A35 /* SignIn.storyboard */,
 				5F1E18CC28984323004B2A35 /* SignInViewController.swift */,
 				5F1E18C22897D59D004B2A35 /* PetListCell.swift */,
@@ -246,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F853AC328999F2200CC6F23 /* AddPet.storyboard in Resources */,
 				5F1E18952897C23F004B2A35 /* LaunchScreen.storyboard in Resources */,
 				5F1E18922897C23F004B2A35 /* Assets.xcassets in Resources */,
 				5F1E18902897C23A004B2A35 /* Main.storyboard in Resources */,
@@ -278,6 +285,7 @@
 				5F1E18CD28984323004B2A35 /* SignInViewController.swift in Sources */,
 				5F1E18C7289840F8004B2A35 /* SignUpViewController.swift in Sources */,
 				5F1E188D2897C23A004B2A35 /* ViewController.swift in Sources */,
+				5F853AC528999F3300CC6F23 /* AddPetViewController.swift in Sources */,
 				5F1E18C32897D59D004B2A35 /* PetListCell.swift in Sources */,
 				5F1E18892897C23A004B2A35 /* AppDelegate.swift in Sources */,
 				5F1E188B2897C23A004B2A35 /* SceneDelegate.swift in Sources */,
