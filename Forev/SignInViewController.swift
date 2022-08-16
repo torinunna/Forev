@@ -13,7 +13,7 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var idTextfield: UITextField!
     @IBOutlet weak var pwTextfield: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var findIdButton: UIButton!
     @IBOutlet weak var findPwButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
