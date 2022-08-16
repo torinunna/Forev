@@ -22,5 +22,10 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
     }
     
-
+    @IBAction func signUpPressed(_ sender: UIButton) {
+        let signUp = UIStoryboard(name: "SignUp", bundle: nil)
+        let signUpVC = signUp.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        self.present(signUpVC, animated: true)
+    }
+    
 }
